@@ -8,19 +8,19 @@ const axios=require('axios');
 module.exports = {
 
 afterCreate:async entry=>{
-    axios.post(strapi.config.currentEnvironment.staticWebsiteBuildUrl, entry)
+    axios.post(strapi.config.environments.production.staticWebsiteBuildUrl, entry)
     .catch(()=>{
 
     });
 },
 afterUpdate:async entry=>{
-    axios.post(strapi.config.currentEnvironment.staticWebsiteBuildUrl, entry)
+    axios.post(strapi.config.environments.production.staticWebsiteBuildUrl, entry)
     .catch(()=>{
 
     });
 },
 afterDestroy:async entry=>{
-    axios.post(strapi.config.currentEnvironment.staticWebsiteBuildUrl, entry)
+    axios.post(strapi.config.environments.production.staticWebsiteBuildUrl, entry)
     .catch(()=>{
 
     });
