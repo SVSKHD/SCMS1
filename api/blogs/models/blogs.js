@@ -3,7 +3,7 @@
 const axios = require('axios');
 
 /**
- * Lifecycle callbacks for the `Article` model.
+ * Lifecycle callbacks for the `blogs` model.
  */
 
 module.exports = {
@@ -38,9 +38,9 @@ module.exports = {
   // After creating a value.
   // Fired after an `insert` query.
   // afterCreate: async (model, attrs, options) => {
-  afterCreate: async entry => {
+  afterCreate: async (entry) => {
     axios
-      .post(strapi.config.currentEnvironment.staticWebsiteBuildUrl, {})
+      .post(strapi.config.currentEnvironment.staticWebsiteBuildURL, (entry))
       .catch(() => {
         // Ignore
       });
@@ -53,9 +53,9 @@ module.exports = {
   // After updating a value.
   // Fired after an `update` query.
   // afterUpdate: async (model, attrs, options) => {
-  afterUpdate: async entry => {
+  afterUpdate: async (entry) => {
     axios
-      .post(strapi.config.currentEnvironment.staticWebsiteBuildUrl, {})
+      .post(strapi.config.currentEnvironment.staticWebsiteBuildURL, (entry))
       .catch(() => {
         // Ignore
       });
@@ -68,9 +68,9 @@ module.exports = {
   // After destroying a value.
   // Fired after a `delete` query.
   // afterDestroy: async (model, attrs, options) => {
-  afterDestroy: async entry => {
+  afterDestroy: async (entry) => {
     axios
-      .post(strapi.config.currentEnvironment.staticWebsiteBuildUrl, {})
+      .post(strapi.config.currentEnvironment.staticWebsiteBuildURL, (entry))
       .catch(() => {
         // Ignore
       });
