@@ -40,6 +40,10 @@
     },
     "Price": {
       "type": "richtext"
+    },
+    "published": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
