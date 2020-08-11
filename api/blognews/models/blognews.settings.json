@@ -16,7 +16,7 @@
       "type": "richtext"
     },
     "BlogCoverImage": {
-      "collection": "file",
+      "model": "file",
       "via": "related",
       "allowedTypes": [
         "images",
@@ -28,6 +28,9 @@
     },
     "slug": {
       "type": "uid"
+    },
+    "Subtitle": {
+      "type": "text"
     }
   }
 }
