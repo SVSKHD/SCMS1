@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/runningtopics",
+      "handler": "runningtopic.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/runningtopics/count",
+      "handler": "runningtopic.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/runningtopics/:id",
+      "handler": "runningtopic.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/runningtopics",
+      "handler": "runningtopic.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/runningtopics/:id",
+      "handler": "runningtopic.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/runningtopics/:id",
+      "handler": "runningtopic.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

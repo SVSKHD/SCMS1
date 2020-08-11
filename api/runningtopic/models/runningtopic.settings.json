@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "runningtopics",
+  "info": {
+    "name": "Runningtopic"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Content": {
+      "type": "richtext"
+    }
+  }
+}
